@@ -1,0 +1,18 @@
+<ion-view view-title="iBar">
+  <!-- <ion-nav-buttons>
+    <button class="button icon-left ion-android-arrow-back" ng-click="goHome()"></button>
+    </ion-nav-buttons> -->
+
+  <ion-content id="barContent">
+    <ion-list>
+      <ion-item id="lista" class="card animated flipInX" ng-repeat="offer in offer" type="item-text-wrap">
+        <div id="offer" class="item item-text-wrap">
+        <h2 id="offerText"> {{offer.Oferta}}</h2>
+      </div>
+      <div class="item ">
+        <h3 id="offerPrice" class="animated infinite rubberBand">{{offer.Precio}}€</h3>
+      </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

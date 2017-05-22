@@ -1,0 +1,23 @@
+
+<ion-view view-title="iBar">
+  <!-- <ion-nav-buttons>
+    <button class="button icon-left ion-android-arrow-back" ng-click="goHome()"></button>
+    </ion-nav-buttons> -->
+
+        <ion-content id="introContent">
+          <div class="card animated bounceInUp" ng-repeat="info in info " id="lista">
+              <div class="item item-divider">
+                {{info.Nombre}}
+              </div>
+              <div class="item item-text-wrap">
+                {{info.Descripcion}}
+              </div>
+              <div class="item item-text-wrap" id="image">
+                <img id="image" src="data:image/jpeg;base64,{{info.Foto}}">
+              </div>
+              <div class="item item-divider">
+                Calle: {{info.Calle}}
+              </div>
+            </div>
+        </ion-content>
+</ion-view>

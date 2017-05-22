@@ -1,0 +1,15 @@
+<ion-view view-title="iBar">
+  <!-- <ion-nav-buttons>
+    <button class="button icon-left ion-android-arrow-back" ng-click="goHome()"></button>
+    </ion-nav-buttons> -->
+
+    <ion-content id="introContent">
+        <div class="card animated rollIn" ng-repeat="textEvent in textEvent " id="lista">
+          <div class="item item-text-wrap">
+            <div class="item item-text-wrap" id="EventTitulo">{{textEvent.Titulo}}</div>
+            <div class="item item-text-wrap" id="EventDescr">{{textEvent.Descripcion}}</div>
+            <div class="item item-text-wrap" id="EventFecha">{{textEvent.Fecha}}</div>
+          </div>
+        </div>
+  </ion-content>
+</ion-view>

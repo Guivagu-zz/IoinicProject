@@ -1,0 +1,38 @@
+<ion-view view-title="iBar">
+  <!-- <ion-nav-buttons>
+    <button class="button icon-left ion-android-arrow-back" ng-click="goHome()"></button>
+    </ion-nav-buttons> -->
+
+
+  <ion-content scroll="false">
+    <!-- <div class="item item-input-inset">
+      <label class="item-input-wrapper">
+        <input type="text" placeholder="Email" ng-model="bomb">
+      </label>
+      <button class="button button-small" ng-click="sendBomb()">
+        Submit
+      </button>
+    </div> -->
+    <div id="sendChat">
+      <div class="item item-input" id="form">
+        <input ng-model="bomb" type="text" placeholder="Manda tu mensaje anónimo"></input>
+        <i class="fa fa-bomb fa-spin fa-2x fa-fw" aria-hidden="true" ng-click="sendBomb()"></i>
+        <span class="sr-only">Refreshing...</span>
+        <!-- <button class="button icon-left ion-android-send" ng-click="sendBomb()"></button> -->
+      </div>
+    </div>
+    </ion-content>
+
+    <ion-content class='has-header has-subheader' id="introContent">
+    <ion-list id="padding">
+      <div class="list list-inset animated zoomInUp" id="lista" class="item">
+      <ion-item ng-repeat="chat in chat" type="item-text-wrap" class="item item-text-wrap">
+        <div id="chat">
+        <h2 id="chatText">{{chat.Chat}}</h2>
+      </div>
+      </ion-item>
+    </div>
+    </ion-list>
+  </ion-content>
+
+</ion-view>

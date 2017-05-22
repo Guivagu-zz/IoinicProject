@@ -1,0 +1,12 @@
+<ion-view view-title="iBar">
+        <ion-content id="introContent">
+          <div class="list list-inset" id="lista">
+            <ion-item ng-repeat="bar in bar" type="item-text-wrap">
+              <div>
+                <h2 id="introFont" ng-click="barfunc(bar)"> {{bar.Nombre}} </h2>
+                {{city}}, {{country}}
+            </div>
+            </ion-item>
+          </div>
+        </ion-content>
+</ion-view>
